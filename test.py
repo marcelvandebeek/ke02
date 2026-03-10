@@ -8,7 +8,7 @@ for line in f.readlines():
     lijst.append(line.strip())
 f.close()
 
-regel = (lijst[0])
+regel = lijst[0]
 lijst.clear()
 rmax = len(regel)
 pleft = 0
