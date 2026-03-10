@@ -25,8 +25,8 @@ jobs:
       - name: Run pylint
         run: |
           pylint $(git ls-files '*.py') \
-          --disable=C0114, C0103 \
-          > pylint-report.txt || true
+            --disable=C0114, C0103 \
+            > pylint-report.txt || true
 
       - name: Send email with report
         uses: dawidd6/action-send-mail@v3
